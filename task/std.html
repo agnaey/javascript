@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        color: blue;
+        display: block;
+    }
+    #edit_form{
+        display: none;
+    }
+    table, th, td {
+        border: 4px solid black;
+        padding: 15px;
+        border-collapse: collapse;
+
+    }
+    h1{
+        text-align: center;
+        text-decoration: underline;
+
+    }
+  
+    th{
+        background-color: rgb(9, 140, 254);
+        color: white;
+        font-size: 20px;
+    }
+    input{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    button{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(9, 140, 254);
+        color: white;
+    }
+    #add_form{
+        margin-top: 50px;
+    }
+
+</style>
+<body>
+    <h1>STUDENT DATA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll no</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Place</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <form id="add_form">
+        <input type="text" id="id" placeholder="enter the id">
+        <input type="text" id="name" placeholder="enter the name">
+        <input type="text" id="age" placeholder="enter the age">
+        <input type="text" id="email" placeholder="enter the email">
+        <input type="text" id="phone" placeholder="enter the phone">
+        <input type="text" id="place" placeholder="enter the place">
+        <input type="submit" value="add">
+    </form>
+
+
+    <form id="edit_form">
+        <input type="text" id="e_id" placeholder="edit the id">
+        <input type="text" id="e_name" placeholder="edit the name">
+        <input type="text" id="e_age" placeholder="edit the age">
+        <input type="text" id="e_email" placeholder="edit the email">
+        <input type="text" id="e_phone" placeholder="edit the phone">
+        <input type="text" id="e_place" placeholder="edit the place">
+        <input type="submit" value="update">
+    </form>
+    
+    <script src="std.js"></script>
+</body>
+</html>
