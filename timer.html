@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    </style>
+    <!-- <h2 id="time"></h2> -->
+
+    <img id="timer" src="lucky_bg.webp" alt="">
+    <script>
+        // let count=10
+        // let data=setInterval(() => {
+        //     document.getElementById("time").innerHTML=count
+        //     console.log(count);
+
+        //     count--
+        //     if(count<0){
+        //         clearInterval(data)
+        //     }
+
+
+        // }, 1000);
+
+
+        // ===========================================
+        // let sec=59
+        // let min=2
+        // let data=setInterval(() => {
+        //     document.getElementById("time").innerHTML=min+':'+sec
+
+        //     sec--
+        //     if(sec<0){
+        //         min--
+        //         sec=60
+        //         if(min<0){
+        //             clearInterval(data)
+        //         }
+        //     }
+
+        // }, 100);
+
+
+        let time=5
+        let data=setInterval(()=>{
+            document.getElementById('timer').innerHTML=time
+
+            time--
+            if(time<0){
+                document.getElementById('timer').style.display='none'
+                clearInterval(data)
+
+            }
+        },1000)
+
+
+        
+        
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>
