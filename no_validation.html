@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" id="form">
+        <input type="tel" id="no" required pattern="^[6-9]\d{9}">
+        <input type="submit" value="add">
+    </form> -->
+
+       <form action="" id="form">
+        <input type="tel" id="no" required >
+        <p id="al"></p>
+        <input type="submit" value="add">
+    </form>
+
+    <script>
+        document.getElementById('form').addEventListener('submit',function (event){
+            event.preventDefault()
+            let no=document.getElementById('no').value
+            let al=document.getElementById('al')
+            if(/^[6-9]\d{9}/.test(no)){
+                al.innerHTML='Valid'
+            }
+            else{
+                al.innerHTML='invalid'
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
