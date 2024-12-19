@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+// callback
+
+            // function Demo(callback){
+            //     console.log('Demo fun');
+            //     callback()
+            // }
+            // function sample(){
+            //     console.log('sample fun')
+            // }
+            // Demo(sample)
+
+
+//callback hell
+
+
+            function Demo(callback){
+                console.log('Demo fun');
+                callback(sample1)
+            }
+            function sample(callback){
+                console.log('sample fun')
+                callback()
+            }
+            
+            function sample1(){
+                console.log('sample1 fun');
+            }
+
+            Demo(sample)
+
+        </script>
+    </body>
+    </html>
+</body>
+</html>

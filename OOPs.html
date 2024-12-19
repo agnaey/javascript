@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // class std{
+        //     constructor(name){
+        //         this.name=name
+        //         console.log('demo data');
+        //     }
+        //     display(age){
+        //         console.log('display',this.name,age);
+        //     }
+        //     display(age){
+        //         console.log('display',this.name,age);
+        //     }  
+        // }
+        // let std1=new std('anu')
+        // std1.display(22)
+
+        // ---------------------------------------------
+
+        class School{
+            constructor(){
+                console.log('school class');
+            }
+            classroom(){
+                console.log('class rooms');
+            }
+        }
+
+        class std extends School{
+            constructor(name){
+                super()
+                this.name=name
+                console.log('demo data');
+            }
+            display(age){
+                console.log('display',this.name,age);
+            }
+            display1(no){
+                console.log('display1',no);
+            }  
+            
+        }
+        let std1=new std('anu')
+        std1.display(22)
+        std1.classroom()
+        std1.display1(67563)
+
+
+
+    </script>
+    
+</body>
+</html>

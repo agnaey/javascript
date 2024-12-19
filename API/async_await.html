@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        async function demo() {
+            const data = new Promise((resolve,reject)=>{
+                setTimeout(()=>reject('data avalible'),2000)
+            })
+            const result=await data
+            console.log(result);
+        }
+        demo()
+
+    </script>
+    
+</body>
+</html>
